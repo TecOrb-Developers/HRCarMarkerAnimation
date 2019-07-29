@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HRMarkerAnimation</string>
+    <string name="key"></string>
 </resources>

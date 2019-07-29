@@ -16,6 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' }
+        }
+    }
 }
 
 dependencies {
@@ -27,8 +33,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
     implementation 'com.google.android.gms:play-services-location:16.0.0'
-    implementation project(':hrmovecarmarkeranimation')
     implementation 'gun0912.ted:tedpermission:2.2.2'
+    implementation 'com.github.TecOrb-Developers:HRMarkerAnimation:fe6f64e75b'
+
 
 }
 apply plugin: 'com.google.gms.google-services'
