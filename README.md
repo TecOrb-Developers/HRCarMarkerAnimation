@@ -2,14 +2,11 @@
 
 [![](https://jitpack.io/v/TecOrb-Developers/HRMarkerAnimation.svg)](https://jitpack.io/#TecOrb-Developers/HRMarkerAnimation)
 
-<br>
 <meta name="google-site-verification" content="9xX5qBXiwU0-eOti0o3ujCSFXmus9BTbz6Dw5FNmtm0" />
 Smooth marker animation on google map along with proper turns and camera bearing. 
-<br>
 
 # Demo
 <img src="https://github.com/TecOrb-Developers/HRMarkerAnimation/blob/master/markerAnimation.gif?raw=true" width="250" height="400"/>
-
 
 ## Steps:
 
