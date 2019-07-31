@@ -42,7 +42,9 @@ private boolean isMarkerVisible(GoogleMap googleMap, LatLng newLocation) {
         return googleMap.getProjection().getVisibleRegion().latLngBounds.contains(newLocation);
     }
 ```
-Note:
+
+#Note:
+
     If you are animating car onLocationChanged() then,
    Ideal location request for car animation should be as below. Greater than the interval mentioned will give
    more good results but less than this may hamper the animation.
