@@ -60,8 +60,8 @@ Note:
 ```groovy
 App Level:
 dependencies {
-	   implementation 'com.github.TecOrb-Developers:HRMarkerAnimation:xyz'
-	}
+    implementation 'com.github.TecOrb-Developers:HRMarkerAnimation:xyz'
+}
   
 ```
 ```groovy
