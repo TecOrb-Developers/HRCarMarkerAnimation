@@ -13,7 +13,9 @@ Smooth marker animation on google map along with proper turns and camera bearing
 Pass the Marker to animate, googlemap, Location of current position and Old Location of the marker of the user, 
 duration of the animation & UpdateLocationCallBack Callback interface.
 
-``` java
+``` 
+
+java
  private Location mLastLocation;
  private Location oldLocation;
  
@@ -23,6 +25,7 @@ duration of the animation & UpdateLocationCallBack Callback interface.
                             oldLocation = updatedLocation;
                         }
                     }).animateMarker(mLastLocation, oldLocation, marker);
+                    
 ```
 Here marker, googlemap,mLastLocation refers to the position of marker,oldLocation position refers to the position of 
 the maker for calculating the slop of marker. 
@@ -37,38 +40,52 @@ whenever the marker is not visible means outside the screen then it automaticall
 
 For eg-
 
-``` java
-private boolean isMarkerVisible(GoogleMap googleMap, LatLng newLocation) {
-        return googleMap.getProjection().getVisibleRegion().latLngBounds.contains(newLocation);
-    }
 ```
 
-#Note:
+java
+private boolean isMarkerVisible(GoogleMap googleMap, LatLng newLocation) {
+        
+        return googleMap.getProjection().getVisibleRegion().latLngBounds.contains(newLocation);
+    }
+    
+```
 
-    If you are animating car onLocationChanged() then,
+# Note:
+
+   If you are animating car onLocationChanged() then,
    Ideal location request for car animation should be as below. Greater than the interval mentioned will give
    more good results but less than this may hamper the animation.
    
-   ``` java
+   ``` 
+   
+   java
     mLocationRequest = new LocationRequest();
     mLocationRequest.setInterval(1000 * 5);
     mLocationRequest.setFastestInterval(1000 * 3);
     mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    
    ``` 
  
 
 ## Dependency
 
-```groovy
+```
+
+groovy
 App Level:
 dependencies {
     implementation 'com.github.TecOrb-Developers:HRMarkerAnimation:xyz'
 }
   
 ```
-```groovy
+
+
+```
+
+groovy
 Project Level:
 maven { url 'https://jitpack.io' }
+
 ``` 
  Replace xyz with latest version
  
