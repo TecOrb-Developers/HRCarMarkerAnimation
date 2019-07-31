@@ -12,7 +12,6 @@ Smooth marker animation on google map along with proper turns and camera bearing
 # Demo
 <img src="https://github.com/TecOrb-Developers/HRMarkerAnimation/blob/master/markerAnimation.gif?raw=true" width="250" height="400"/>
 
-<br><br>
 
 ## Steps:
 
@@ -81,8 +80,6 @@ maven { url 'https://jitpack.io' }
 ``` 
  Replace xyz with latest version
  
-  <br><br>
-
 # Developers
 
 MIT License
