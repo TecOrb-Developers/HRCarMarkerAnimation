@@ -21,11 +21,11 @@ java
  private Location oldLocation;
  
  new HRMarkerAnimation(googleMap,1000, new UpdateLocationCallBack() {
-                        @Override
-                        public void onUpdatedLocation(Location updatedLocation) {
-                            oldLocation = updatedLocation;
-                        }
-                    }).animateMarker(mLastLocation, oldLocation, marker);
+           @Override
+           public void onUpdatedLocation(Location updatedLocation) {
+                   oldLocation = updatedLocation;
+                    }
+            }).animateMarker(mLastLocation, oldLocation, marker);
                     
 ```
 
