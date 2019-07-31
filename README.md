@@ -79,12 +79,6 @@ App Level:
 dependencies {
     implementation 'com.github.TecOrb-Developers:HRMarkerAnimation:xyz'
 }
-  
-```
-
-
-```
-
 groovy
 Project Level:
 maven { url 'https://jitpack.io' }
@@ -92,7 +86,7 @@ maven { url 'https://jitpack.io' }
 ``` 
  Replace xyz with latest version
  
- To get a small example, please [download this repo](/) add your Google API Key in values and execute it
+ To get a small example, please download this repo add your Google API Key in values and execute it
 
  
 # Developers
