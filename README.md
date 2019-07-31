@@ -6,6 +6,7 @@
 Smooth marker animation on google map along with proper turns and camera bearing. 
 
 # Demo
+
 <img src="https://github.com/TecOrb-Developers/HRMarkerAnimation/blob/master/markerAnimation.gif?raw=true" width="250" height="400"/>
 
 # Steps:
@@ -27,6 +28,7 @@ java
                     }).animateMarker(mLastLocation, oldLocation, marker);
                     
 ```
+
 Here marker, googlemap,mLastLocation refers to the position of marker,oldLocation position refers to the position of 
 the maker for calculating the slop of marker. 
 These four fields are mandatory.
@@ -39,6 +41,7 @@ The isMarkerVisible method return true or false if marker is visible on user dev
 whenever the marker is not visible means outside the screen then it automatically animate to center of the screen
 
 For eg-
+
 
 ```
 
