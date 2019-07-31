@@ -92,6 +92,9 @@ maven { url 'https://jitpack.io' }
 ``` 
  Replace xyz with latest version
  
+ To get a small example, please [download this repo](/) add your Google API Key in values and execute it
+
+ 
 # Developers
 
 MIT License
