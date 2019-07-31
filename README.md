@@ -2,8 +2,6 @@
 
 [![](https://jitpack.io/v/TecOrb-Developers/HRMarkerAnimation.svg)](https://jitpack.io/#TecOrb-Developers/HRMarkerAnimation)
 
-
-
 <br>
 <meta name="google-site-verification" content="9xX5qBXiwU0-eOti0o3ujCSFXmus9BTbz6Dw5FNmtm0" />
 Smooth marker animation on google map along with proper turns and camera bearing. 
@@ -29,17 +27,13 @@ duration of the animation & UpdateLocationCallBack Callback interface.
                         }
                     }).animateMarker(mLastLocation, oldLocation, marker);
 ```
-<br>
 Here marker, googlemap,mLastLocation refers to the position of marker,oldLocation position refers to the position of 
 the maker for calculating the slop of marker. 
 These four fields are mandatory.
-<br><br>
 
 <br>
-
-  duration refers to the animation time. By default it will take 1000.
-callback is the interface of Googlemap UpdatedLoation Callback return Old location. It requires when the user wants to animate the next animation 
-after the first has finished.
+Duration refers to the animation time. By default it will take 1000.
+callback is the interface of Googlemap UpdatedLoation Callback return Old location. It requires when the user wants to animate the next animation after the first has finished.
 <br>
 
 
