@@ -8,7 +8,7 @@ Smooth marker animation on google map along with proper turns and camera bearing
 # Demo
 <img src="https://github.com/TecOrb-Developers/HRMarkerAnimation/blob/master/markerAnimation.gif?raw=true" width="250" height="400"/>
 
-## Steps:
+# Steps:
 
 Pass the Marker to animate, googlemap, Location of current position and Old Location of the marker of the user, 
 duration of the animation & UpdateLocationCallBack Callback interface.
@@ -28,10 +28,8 @@ Here marker, googlemap,mLastLocation refers to the position of marker,oldLocatio
 the maker for calculating the slop of marker. 
 These four fields are mandatory.
 
-<br>
 Duration refers to the animation time. By default it will take 1000.
 callback is the interface of Googlemap UpdatedLoation Callback return Old location. It requires when the user wants to animate the next animation after the first has finished.
-<br>
 
 
 The isMarkerVisible method return true or false if marker is visible on user device screen then it return false 
@@ -48,6 +46,7 @@ Note:
     If you are animating car onLocationChanged() then,
    Ideal location request for car animation should be as below. Greater than the interval mentioned will give
    more good results but less than this may hamper the animation.
+   
    ``` java
     mLocationRequest = new LocationRequest();
     mLocationRequest.setInterval(1000 * 5);
